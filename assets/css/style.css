@@ -39,3 +39,12 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.score-elements {
+    height: 1.5rem;
+    width: 1.5rem;    
+    border-radius: 50%;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    margin-top: 0.25rem;
+}
