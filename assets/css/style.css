@@ -29,8 +29,17 @@ header {
     justify-content: center;
 }
 
-.game-description {
+#game-description {
     margin-top: 5rem;
+    font-size: 0.7rem;
+    font-style: italic;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.game-objective {
+
     font-size: 0.7rem;
     font-style: italic;
     padding: 0.5rem;
