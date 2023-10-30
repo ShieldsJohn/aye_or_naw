@@ -39,12 +39,16 @@ header {
 }
 
 .game-objective {
-
     font-size: 0.7rem;
     font-style: italic;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
+}
+
+#game-area {
+    border: 5px solid #ffffff;
+    margin: 2rem;
 }
 
 #start-game {
@@ -54,6 +58,11 @@ header {
 
 #start-game-align {
     text-align: center;
+}
+
+#play-button {
+    color: #3a3a3a;
+    background-color: aqua;
 }
 
 #pname {
@@ -66,8 +75,12 @@ header {
     background-color: #ffffff;
 }
 
-#game-area {
-    
+#question-box {
+    border: 3px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    height: fit-content;
 }
 
 .score-elements {
