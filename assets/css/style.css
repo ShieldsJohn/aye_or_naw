@@ -27,8 +27,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    
 }
 
 #game-description {
@@ -38,6 +36,31 @@ header {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
+}
+
+#start-game {
+    font-size: 0.75rem;
+    margin: 0 auto 1rem auto;
+}
+
+#start-game-align {
+    text-align: center;
+}
+
+#pname {
+    margin-top: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#play-button {
+    color:#ffffff;
+    background-color: #ffffff;
+}
+
+#game-area {
+    
 }
 
 .score-elements {
