@@ -29,7 +29,7 @@ header {
     justify-content: center;
 }
 
-#game-description {
+.game-description {
     margin-top: 5rem;
     font-size: 0.7rem;
     font-style: italic;
@@ -49,9 +49,7 @@ header {
 
 #pname {
     margin-top: 2rem;
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
 #play-button {
