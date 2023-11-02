@@ -13,15 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //begins with player entering name and pressing play and play button being made hidden
-function runGame() {
-    let pName = document.getElementById("pname");
     function validatePName() {
         let x = document.getElementsByTagName("input").value;
         if (x === " ") {
             alert ("Please enter Player Name to start");
             return false;
         }
-    }
 
 }
 //either true or false
