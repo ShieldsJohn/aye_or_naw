@@ -60,19 +60,23 @@ header {
     text-align: center;
 }
 
-#play-button {
-    color: #3a3a3a;
-    background-color: aqua;
-}
-
 #pname {
     margin-top: 1rem;
     width: 100%;
+    font-family: 'Chakra Petch', sans-serif; 
+    font-size: 20px;
 }
 
 #play-button {
-    color:#ffffff;
+    color:#3a3a3a;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif; 
+    font-size: 30px;
+    height: 5rem;
+    width: 15rem;
 }
 
 #score-bar {
@@ -109,10 +113,14 @@ header {
 #aye-button {
     height: 5rem;
     width: 15rem;
+    font-family: 'Chakra Petch', sans-serif; 
+    font-size: 30px;
 }
 
 #naw-button {
     height: 5rem;
     width: 15rem;
+    font-family: 'Chakra Petch', sans-serif; 
+    font-size: 30px;
 }
 
