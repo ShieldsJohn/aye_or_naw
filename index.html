@@ -25,9 +25,9 @@
     <div id="start-game">
         <p id="start-game-align">
         <form>
-            <input type="text" id="pname" name="pname" placeholder="e.g. JON" style="text-align: center;" required><br><br>
+            <input type="text" id="pname" name="pname" placeholder="e.g. JON" maxlength="3" onkeydown="return /[a-zA-Z]/i.test(event.key)" style="text-align: center;" required><br><br>
             <div>
-            <button id="play-button" data-type="button" type="submit">Play</button>
+            <button id="play-button" data-type="button" type="submit" value="Play">Play</button>
             </div>
         </form>
         </p>
@@ -47,10 +47,10 @@
     <section id="game-area">
         <div id="question-box">Question text here... aaaa aaaa aaaa  aaaa aaa aaa aaaa aaaa aaaa aaa</div>
         <div class="answer-buttons" >
-            <button id="aye-button" data-type="button">Aye</button>
+            <button id="aye-button" data-type="button" value="Aye">Aye</button>
         </div>
         <div class="answer-buttons">
-            <button id="naw-button" data-type="button">Naw</button>
+            <button id="naw-button" data-type="button" value="Naw">Naw</button>
         </div>
         </div>
     </section>

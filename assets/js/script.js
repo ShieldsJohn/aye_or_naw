@@ -5,22 +5,25 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "button") {
-            
+        
             } 
         })
     }
+    runGame();
 })
 
 
 //begins with player entering name and pressing play and play button being made hidden
-    function validatePName() {
-        let x = document.getElementsByTagName("input").value;
-        if (x === " ") {
-            alert ("Please enter Player Name to start");
-            return false;
+    function runGame() {
+        let plrName = document.getElementsByTagName("input").value;
+        let playButton = document.getElementById("play-button");
+        function hidePlayButton() {
+            if (plrName !== null) {
+                playButton.style.visibility = "hidden"
+                }
+            }
         }
 
-}
 //either true or false
 function checkAnswer() {
 
