@@ -104,6 +104,7 @@ header {
     margin: 5%;
     min-height: 80px;
     height: fit-content;
+    text-align: center;
 }
 
 .answer-buttons {

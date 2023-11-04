@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } 
         })
     }
+    runGame()
 })
 
 //begins with player entering name play button being made hidden
@@ -97,6 +98,14 @@ let questionsAnswers = [
  ];
 
 //load question upon entering valid player name
+function runGame() {
+    let q1 = 0;
+    let aye = document.getElementById("aye-button")
+    let naw = document.getElementById("naw-button")
+    document.getElementById("question-box").innerHTML = questionsAnswers[q1].question;
+    aye.innerHTML = questionsAnswers[q1].answers[0].option;
+  
+    }
 
 
 //increment to 10, displaying correct answers as green and incorrect as red in the score-bar
