@@ -12,18 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     runGame()
 })
 
-//begins with player entering name play button being made hidden
-let plrName = document.getElementById("pname");
-let playButton = document.getElementById("play-button");
-
-plrName.addEventListener("input", () => {
-        if (plrName.value.length === 3) {
-             playButton.style.display = "none";
-        }   else {
-            playButton.style.display = "block";
-        }
-           });
-
 //question and answer array
 let questionsAnswers = [
     {question: "Dundee was a former capital of Scotland - Aye or Naw?", 
@@ -97,17 +85,36 @@ let questionsAnswers = [
     },
  ];
 
-//load question upon entering valid player name
+
 function runGame() {
+//begins with player entering name, play button being made hidden
+let plrName = document.getElementById("pname");
+let playButton = document.getElementById("play-button");
+
+plrName.addEventListener("input", () => {
+        if (plrName.value.length === 3) {
+             playButton.style.display = "none";
+        }   else {
+            playButton.style.display = "block";
+        }
+           });
+
+//load question upon entering valid player name
     let q1 = 0;
     let aye = document.getElementById("aye-button")
     let naw = document.getElementById("naw-button")
+
+    document.getElementById("game-area").style.display = "none";
+    document.addEventListener("input", function () {
+        if (plrName.value.length === 3) {
+            document.getElementById("game-area").style.display = "block";
+        }
+    })
     document.getElementById("question-box").innerHTML = questionsAnswers[q1].question;
     aye.innerHTML = questionsAnswers[q1].answers[0].option;
+   
+}
   
-    }
-
-
 //increment to 10, displaying correct answers as green and incorrect as red in the score-bar
 function updateScore() {
 
