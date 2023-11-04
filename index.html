@@ -21,14 +21,13 @@
     </header>
     <p id="game-description">A true or false quiz.</p>
     <p class="game-objective">Answer ten questions correctly to win!</p>
-    <p class="game-objective">Enter your three letter player name to start.</p>
     <div id="start-game">
         <p id="start-game-align">
         <form>
-            <input type="text" id="pname" name="pname" placeholder="e.g. JON" maxlength="3" onkeydown="return /[a-zA-Z]/i.test(event.key)" style="text-align: center;" required><br><br>
             <div>
-            <button id="play-button" data-type="button" type="submit" value="Play">Play</button>
-            </div>
+                <button id="play-button" data-type="button" type="submit" value="Play" onclick="hidePlayButton()">Enter your three letter player name to start</button>
+                </div>
+            <input type="text" id="pname" name="pname" placeholder="e.g. JON" maxlength="3" onkeydown="return /[a-zA-Z]/i.test(event.key)" style="text-align: center;" required><br><br>
         </form>
         </p>
         <div id="score-bar">

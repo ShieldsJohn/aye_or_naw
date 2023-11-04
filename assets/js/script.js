@@ -9,20 +9,23 @@ document.addEventListener("DOMContentLoaded", function() {
             } 
         })
     }
-    runGame();
 })
 
+let plrName = document.getElementById("pname");
+let playButton = document.getElementById("play-button");
+
+plrName.addEventListener("input", () => {
+        if (plrName.value.length === 3) {
+             playButton.style.display = "none";
+        }   else {
+            playButton.style.display = "block";
+        }
+           });
 
 //begins with player entering name and pressing play and play button being made hidden
-    function runGame() {
-        let plrName = document.getElementsByTagName("input").value;
-        let playButton = document.getElementById("play-button");
-        function hidePlayButton() {
-            if (plrName !== null) {
-                playButton.style.visibility = "hidden"
-                }
-            }
-        }
+    
+
+
 
 //either true or false
 function checkAnswer() {

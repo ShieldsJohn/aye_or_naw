@@ -31,7 +31,7 @@ header {
 
 #game-description {
     margin-top: 5rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-style: italic;
     padding: 0.5rem;
     display: flex;
@@ -39,7 +39,7 @@ header {
 }
 
 .game-objective {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-style: italic;
     padding: 0.5rem;
     display: flex;
@@ -53,7 +53,7 @@ header {
 
 #start-game {
     font-size: 0.75rem;
-    margin: 0 auto 1rem auto;
+    margin: 1rem auto 1rem auto;
 }
 
 #start-game-align {
@@ -65,6 +65,7 @@ header {
     width: 100%;
     font-family: 'Chakra Petch', sans-serif; 
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 #play-button {
@@ -74,7 +75,7 @@ header {
     justify-content: center;
     align-items: center;
     font-family: 'Chakra Petch', sans-serif; 
-    font-size: 30px;
+    font-size: 15px;
     height: 5rem;
     width: 15rem;
 }
