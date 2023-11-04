@@ -102,6 +102,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 5%;
+    min-height: 80px;
     height: fit-content;
 }
 

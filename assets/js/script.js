@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+//begins with player entering name play button being made hidden
 let plrName = document.getElementById("pname");
 let playButton = document.getElementById("play-button");
 
@@ -22,7 +23,16 @@ plrName.addEventListener("input", () => {
         }
            });
 
-//begins with player entering name and pressing play and play button being made hidden
+//load question upon entering valid player name
+
+function questionsAndAnswers() {
+    if (playButton.style.display = "none") {
+        function q1() {
+
+        }
+    }
+
+}
     
 
 
