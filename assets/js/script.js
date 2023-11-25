@@ -84,10 +84,22 @@ function runGame() {
 
     //load question upon entering valid player name
     const score = document.getElementById("score1");
-    const ayeBtn = document.getElementById("aye-button");
-    const nawBtn = document.getElementById("naw-button");
+    const aye = document.getElementById("aye-button");
+    const naw = document.getElementById("naw-button");
+    const userAnswer = document.addEventListener("click");
 
-    ayeBtn.addEventListener("click", () => {
+    aye.addEventListener("click", () => {
+        questionIndex++;
+        loadQuestion()
+        if (userAnswer === correctAnswer[0]) {
+            document.getElementById("score1").style.backgroundColor = "green";
+        }
+        else {
+            document.getElementById("score1").style.backgroundColor = "red";
+        }
+    
+    })
+    naw.addEventListener("click", () => {
         questionIndex++;
         loadQuestion()
     })
@@ -103,6 +115,17 @@ function loadQuestion() {
     const currentQuestion = questionsAnswers[questionIndex]
     console.log(currentQuestion);
     document.getElementById("question-box").innerHTML = currentQuestion.question
+}
+
+function checkAnswer(userAnswer) {
+    const correctAnswer = true;
+    if (userAnswer === correctAnswer[0]) {
+        document.getElementById("score1").style.backgroundColor = "green";
+    }
+    else {
+        document.getElementById("score1").style.backgroundColor = "red";
+    }
+
 }
 
 //increment to 10, displaying correct answers as green and incorrect as red in the score-bar
