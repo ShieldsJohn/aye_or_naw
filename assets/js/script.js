@@ -86,7 +86,6 @@ function runGame() {
     const score = document.getElementById("score1");
     const aye = document.getElementById("aye-button");
     const naw = document.getElementById("naw-button");
-    const userAnswer = document.addEventListener("click");
 
     aye.addEventListener("click", () => {
         questionIndex++;
@@ -102,6 +101,13 @@ function runGame() {
     naw.addEventListener("click", () => {
         questionIndex++;
         loadQuestion()
+        if (userAnswer === correctAnswer[0]) {
+            document.getElementById("score1").style.backgroundColor = "green";
+        }
+        else {
+            document.getElementById("score1").style.backgroundColor = "red";
+        }
+    
     })
 
 }
