@@ -91,13 +91,15 @@ function checkAnswer() {
     const scoreBar = document.getElementsByClassName("score-elements");
     Array = [score1, score2, score3, score4, score5, score6, score7, score8, score9, score10];
     if (userAnswer === correctAnswer) {
-        for (var i = 0; i < Array.length; i++) {
-            Array[i].style.backgroundColor = "green";
+        for (var i = 0; i < scoreBar.length; i++) {
+            console.log(scoreBar[i]);
+            scoreBar[i].style.backgroundColor = "green";
          }
         /**document.getElementById("score1").style.backgroundColor = "green";**/
     } else {
-        for (var i = 0; i < Array.length; i++) {
-            Array[i].style.backgroundColor = "red";
+        for (var i = 0; i < scoreBar.length; i++) {
+            console.log(scoreBar[i]);
+            scoreBar[i].style.backgroundColor = "red";
          }
         /**document.getElementById("score1").style.backgroundColor = "red";**/
     }
