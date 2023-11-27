@@ -88,10 +88,18 @@ function checkAnswer() {
     const currentQuestion = questionsAnswers[questionIndex];
     const correctAnswer = currentQuestion.correctAnswer;
     console.log(correctAnswer)
+    const scoreBar = document.getElementsByClassName("score-elements");
+    Array = [score1, score2, score3, score4, score5, score6, score7, score8, score9, score10];
     if (userAnswer === correctAnswer) {
-        document.getElementById("score1").style.backgroundColor = "green";
+        for (var i = 0; i < Array.length; i++) {
+            Array[i].style.backgroundColor = "green";
+         }
+        /**document.getElementById("score1").style.backgroundColor = "green";**/
     } else {
-        document.getElementById("score1").style.backgroundColor = "red";
+        for (var i = 0; i < Array.length; i++) {
+            Array[i].style.backgroundColor = "red";
+         }
+        /**document.getElementById("score1").style.backgroundColor = "red";**/
     }
     questionIndex++;
     loadQuestion();
