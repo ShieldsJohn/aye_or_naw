@@ -95,8 +95,9 @@ function checkAnswer() {
             console.log(scoreBar[i]);
             scoreBar[i].style.backgroundColor = "green";
          }
+    }
         /**document.getElementById("score1").style.backgroundColor = "green";**/
-    } else {
+    if (userAnswer != correctAnswer) {
         for (var i = 0; i < scoreBar.length; i++) {
             console.log(scoreBar[i]);
             scoreBar[i].style.backgroundColor = "red";
@@ -105,6 +106,7 @@ function checkAnswer() {
     }
     questionIndex++;
     loadQuestion();
+
 }
 //increment to 10, displaying correct answers as green and incorrect as red in the score-bar
 function updateScore() {

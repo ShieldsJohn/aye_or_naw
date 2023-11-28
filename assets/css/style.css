@@ -7,7 +7,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+    
 /*general styles*/
 body {
     min-height: 100vh;
@@ -25,12 +25,14 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
+    background-color: #3a3a3a;
+    box-shadow: 0 2px 2px #ffffff;
     display: flex;
     justify-content: center;
 }
 
 #game-description {
-    margin-top: 5rem;
+    margin-top: 6.5rem;
     font-size: 1rem;
     font-style: italic;
     padding: 0.5rem;
