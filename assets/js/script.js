@@ -88,29 +88,34 @@ function checkAnswer() {
     const currentQuestion = questionsAnswers[questionIndex];
     const correctAnswer = currentQuestion.correctAnswer;
     console.log(correctAnswer)
+    let correctScore = 0;
+    let incorrectScore = 0;
+    document.getElementById("correct-score").textContent = correctScore;
+    document.getElementById("incorrect-score").textContent = incorrectScore;
+    let i = 0
     const scoreBar = document.getElementsByClassName("score-elements");
-    Array = [score1, score2, score3, score4, score5, score6, score7, score8, score9, score10];
+    
     if (userAnswer === correctAnswer) {
-        for (var i = 0; i < scoreBar.length; i++) {
-            console.log(scoreBar[i]);
-            scoreBar[i].style.backgroundColor = "green";
+        while (i < questionsAnswers.length) {
+            console.log(questionsAnswers[i]);
+            i++;
+            /**scoreBar[i].style.backgroundColor = "green";**/
+            correctScore++;
          }
     }
-        /**document.getElementById("score1").style.backgroundColor = "green";**/
     if (userAnswer != correctAnswer) {
-        for (var i = 0; i < scoreBar.length; i++) {
-            console.log(scoreBar[i]);
-            scoreBar[i].style.backgroundColor = "red";
+        while (i < questionsAnswers.length) {
+            console.log(questionsAnswers[i]);
+            i++;
+            /**scoreBar[i].style.backgroundColor = "red";**/
+            incorrectScore++;
          }
-        /**document.getElementById("score1").style.backgroundColor = "red";**/
     }
     questionIndex++;
     loadQuestion();
 
 }
-//increment to 10, displaying correct answers as green and incorrect as red in the score-bar
-function updateScore() {
-}
+
 //once all ten questions have been answered the player is told if won or lost and invited to play again
 function endGame() {
 }
