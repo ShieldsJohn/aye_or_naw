@@ -55,7 +55,7 @@ header {
 
 #start-game {
     font-size: 0.75rem;
-    margin: 1rem auto 1rem auto;
+    margin: .25rem auto .25rem auto;
 }
 
 #start-game-align {
@@ -141,3 +141,18 @@ header {
     font-size: 30px;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+#social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5rem;
+    list-style: none;
+    font-size: 1.25rem;
+}
