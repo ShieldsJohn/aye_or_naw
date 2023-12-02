@@ -128,8 +128,10 @@ header {
     justify-content: center;
     margin: 5%;
     min-height: 80px;
+    padding: 5px;
     height: fit-content;
     text-align: center;
+    
 }
 
 .answer-buttons {
