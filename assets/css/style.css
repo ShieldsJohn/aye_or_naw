@@ -31,6 +31,17 @@ header {
     justify-content: center;
 }
 
+#banner {
+    width: 100%;
+    height: 6rem;
+    opacity: 75%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
 #game-description {
     margin-top: 6.5rem;
     font-size: 1rem;
@@ -132,6 +143,8 @@ header {
     width: 15rem;
     font-family: 'Chakra Petch', sans-serif; 
     font-size: 30px;
+    color: #ffffff;
+    background-color:deepskyblue;
 }
 
 #naw-button {
@@ -139,6 +152,8 @@ header {
     width: 15rem;
     font-family: 'Chakra Petch', sans-serif; 
     font-size: 30px;
+    color: #ffffff;
+    background-color:deepskyblue;
 }
 
 footer {
