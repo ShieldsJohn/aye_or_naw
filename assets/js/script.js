@@ -104,9 +104,32 @@ function checkAnswer() {
     document.getElementById("correct-score").textContent = correctScore;
     document.getElementById("incorrect-score").textContent = incorrectScore;
     questionIndex++;
-    loadQuestion();
+
+    if (questionIndex < questionsAnswers.length) {
+        loadQuestion();
+    } else {
+        endGame();
+    }
+
     }
 
 //once all ten questions have been answered the player is told if won or lost and invited to play again
 function endGame() {
+    if (correctScore === 10) {
+        alert("Congratulations - you won!")
+        restartGame()
+    }
+    else {
+        alert("Unlucky, you didn't win this time - play again!")
+        restartGame()
+    }
+}
+
+function restartGame() {
+    questionIndex = 0;
+    correctScore = 0;
+    incorrectScore = 0;
+    document.getElementById("correct-score").textContent = correctScore;
+    document.getElementById("incorrect-score").textContent = incorrectScore;
+    loadQuestion();
 }
