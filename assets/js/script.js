@@ -84,37 +84,28 @@ function loadQuestion() {
     const currentQuestion = questionsAnswers[questionIndex];
     document.getElementById("question-box").innerHTML = currentQuestion.question;
 }
+
+let correctScore = 0;
+let incorrectScore = 0;
+
 function checkAnswer() {
     const currentQuestion = questionsAnswers[questionIndex];
     const correctAnswer = currentQuestion.correctAnswer;
     console.log(correctAnswer)
-    let correctScore = 0;
-    let incorrectScore = 0;
-    document.getElementById("correct-score").textContent = correctScore;
-    document.getElementById("incorrect-score").textContent = incorrectScore;
-    let i = 0
-    const scoreBar = document.getElementsByClassName("score-elements");
     
     if (userAnswer === correctAnswer) {
-        while (i < questionsAnswers.length) {
-            console.log(questionsAnswers[i]);
-            i++;
-            /**scoreBar[i].style.backgroundColor = "green";**/
-            correctScore++;
-         }
+    console.log(questionsAnswers[questionIndex]);
+    correctScore++;
     }
     if (userAnswer != correctAnswer) {
-        while (i < questionsAnswers.length) {
-            console.log(questionsAnswers[i]);
-            i++;
-            /**scoreBar[i].style.backgroundColor = "red";**/
-            incorrectScore++;
-         }
+    console.log(questionsAnswers[questionIndex]);
+    incorrectScore++;
     }
+    document.getElementById("correct-score").textContent = correctScore;
+    document.getElementById("incorrect-score").textContent = incorrectScore;
     questionIndex++;
     loadQuestion();
-
-}
+    }
 
 //once all ten questions have been answered the player is told if won or lost and invited to play again
 function endGame() {
