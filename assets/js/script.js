@@ -25,7 +25,7 @@ const questionsAnswers = [
         correctAnswer: "naw",
     },
     {
-        question: "Sir Chris Hoy has won six Olympic gold medals in track cylcing - Ayr or Naw?",
+        question: "Sir Chris Hoy has won six Olympic gold medals in track cylcing - Aye or Naw?",
         correctAnswer: "aye",
     },
     {
