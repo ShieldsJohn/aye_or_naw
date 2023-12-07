@@ -110,17 +110,6 @@ header {
     
 }
 
-.score-elements {
-    height: 1.5rem;
-    width: 1.5rem;    
-    border-radius: 50%;
-    background-color: #ffffff;
-    border-color: #ffffff;
-    margin-top: 0.25rem;
-    display: flex;
-    justify-content: right;
-}
-
 #question-box {
     border: 3px solid #ffffff;
     display: flex;
@@ -172,3 +161,32 @@ footer {
     font-size: 2.5vh;
     padding-top: 12.5%;
 }
+
+@media only screen and (min-width: 768px) {
+ 
+    .answer-buttons {
+        display: inline-block;
+        margin: 0px 52.5px 10px;
+    }    
+
+    #score-bar {
+        display: flex;
+    }    
+    
+    #correct {
+        width: 50%;
+        float: left;
+        margin-top: 25px;
+    }
+
+    #incorrect {
+        margin-left: 20%;
+        margin-top: 25px;
+    }
+
+    #social-links {
+        font-size: 2rem;
+    }
+
+  }
+    
