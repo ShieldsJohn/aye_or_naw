@@ -108,7 +108,7 @@ function checkAnswer() {
     if (questionIndex < questionsAnswers.length) {
         loadQuestion();
     } else {
-        endGame();
+        setTimeout(endGame, 50);
     }
 
     }
@@ -117,12 +117,10 @@ function checkAnswer() {
 function endGame() {
     if (correctScore === 10) {
         alert("Congratulations - you won!")
-        restartGame()
-    }
-    else {
+    } else {
         alert("Unlucky, you didn't win this time - play again!")
-        restartGame()
     }
+    restartGame()
 }
 
 function restartGame() {
