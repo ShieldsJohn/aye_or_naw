@@ -10,8 +10,7 @@
     
 /*general styles*/
 body {
-    min-height: 100vh;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     color: #ffffff;
@@ -187,6 +186,48 @@ footer {
     #social-links {
         font-size: 2rem;
     }
-
   }
+
+  @media only screen and (min-width: 1024px) {
+    #game-area {
+        margin: 0 8rem;
+    }
+
+    .answer-buttons {
+        margin: 0px 68px 20px;
+    }
+
+    #game-description {
+        font-size: 1.25rem;
     
+    }
+
+    .game-objective {
+        font-size: 1.25rem;
+  }
+
+  #play-button {
+    font-size: 1.5rem;
+    height: 6rem;
+    width: 20rem;
+}
+
+#pname {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#correct {
+    font-size: 1.5rem;
+}
+
+#incorrect {
+    font-size: 1.5rem;
+}
+
+#question-box {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+    
+  }
