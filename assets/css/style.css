@@ -303,3 +303,75 @@ footer {
     font-size: 2.5rem;
     }
 }
+
+@media only screen and (min-width: 2560px) {
+    
+    header {
+        font-size: 3rem;
+    }
+    
+    #banner {
+        height: 10rem;
+    }
+    
+    #game-area {
+        margin: 2rem 10rem 0rem;
+    }
+
+    .answer-buttons {
+        margin: 0 14.1% 4%;
+    }
+
+    #game-description {
+        margin-top: 12rem;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .game-objective {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    #play-button {
+    font-size: 2.5rem;
+    height: 10rem;
+    width: 30rem;
+    }
+
+    #pname {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    }
+
+    #correct {
+    font-size: 3rem;
+    }
+
+    #incorrect {
+    font-size: 3rem;
+    }
+
+    #question-box {
+    font-size: 3rem;
+    padding: 10px;
+    }
+
+    #aye-button {
+    height: 10rem;
+    width: 30rem;
+    font-size: 3.5rem;
+    }
+
+    #naw-button {
+    height: 10rem;
+    width: 30rem;
+    font-size: 3.5rem;
+    }
+
+    #social-links {
+        font-size: 4rem;
+        }
+        
+
+}
