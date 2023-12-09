@@ -41,6 +41,7 @@ const questionsAnswers = [
         correctAnswer: "aye",
     },
 ];
+
 let questionIndex = 0;
 let userAnswer;
 document.addEventListener("DOMContentLoaded", function () {

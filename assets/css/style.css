@@ -116,8 +116,7 @@ header {
     min-height: 80px;
     padding: 5px;
     height: fit-content;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .answer-buttons {
@@ -148,7 +147,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 5rem;
 }
 
 #social-links {
@@ -157,7 +155,17 @@ footer {
     align-items: center;
     list-style: none;
     font-size: 2.5vh;
-    padding-top: 12.5%;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    color: #ffffff;
+}
+
+#social-links a:link {
+    color: #ffffff;
+}
+
+#social-links a:visited {
+    color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -183,7 +191,7 @@ footer {
     }
 
     #social-links {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
   }
 
@@ -232,7 +240,7 @@ footer {
 }
 
 #social-links {
-    font-size: 3rem;
+    font-size: 2rem;
 }
     
   }
@@ -291,9 +299,4 @@ footer {
     width: 21rem;
     font-size: 2.5rem;
 }
-
-#social-links {
-    font-size: 3rem;
-
-  }
-  }
+}
