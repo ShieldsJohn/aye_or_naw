@@ -1,110 +1,163 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Aye or Naw?
+[Visit the live website here!](https://shieldsjohn.github.io/aye_or_naw/index.html)
 
-Welcome USER_NAME,
+'Aye or Naw?' is a true or false general-knowledger quiz, where ten correct answers are required to win.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Image showing the responsive design of the 'Aye or Naw?' website](README_images/amiresponsive_1.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## User Experience (UX)
 
-## Gitpod Reminders
+### User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+o First Time Visitor Goals
+- To play a quiz and enjoy playing it
+- To intuitively navigate the site and quiz
+- To be able to immedidately play again if unsuccessful on first attempt
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+o Returning Visitor Goals
+- To have enjoyed the first visit and to return to try again
+- To find new questions in the quiz
+- To visit social media sites for the quiz and engage with other fans of the site
 
-Another blue button should appear to click: _Open Browser_.
+o Frequent Visitor Goals
+- To beat high scores
+- To find new quizzes
+- To see development of the site
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Design
 
-A blue button should appear to click: _Make Public_,
+o Colour Scheme and Imagery
+- With the quiz having a scottish theme, I set the blue and orange of Irn-Bru against a dark grey background, using white text and borders to contrast for accessibility.  I chose vibrant versions of the colours to stand out against the grey and bring energy to the design.
+- I also wanted to show correct scores in green and incorrect scores in red.
+- Colours used are as follows:
 
-Another blue button should appear to click: _Open Browser_.
+![Image showing the colour darkgrey](README_images/darkgrey.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Image showing the colour white](README_images/white.png)
 
-To log into the Heroku toolbelt CLI:
+![Image showing the colour deepskyblue](README_images/deepskyblue.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Image showing the colour lightgreen](README_images/lightgreen.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Image showing the colour tomato](README_images/tomato.png)
 
-------
+- The orange comes from an image I used in the header, which is as follows:
 
-## Release History
+![Image showing the header image of question marks](README_images/banner_1.jpg)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Typography
 
-**September 20 2023:** Update Python version to 3.9.17.
+- I have used the font 'Chakra Petch' throughout for it's slightly gaming style, although it is still clean enough for general use.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Features
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- A mobile-first responsive design to allow for most internet traffic being on mobile devices.
+- Data validation, to ensure the user enters a three letter player name to start the game.
+ - A question box that expands and contracts to fit the length of the questions.
+ - Real-time updating of scores for user to see their progress through the quiz.
+ - Alerts to communicate if the game is won or lost and the closure of which, restarts the game for the user.
+ - Social media links that open in new tabs, to allow the user to stay on the quiz page.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ ## Technologies Used
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+ - HTML5
+ - CSS3
+ - JavaScript
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ ## Frameworks, Libraries and Programmes Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+o	Google Fonts
+-	Used to import the 'Chakra Petch' font, which has been used throughout the site.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+o	Font Awesome
+-	Used to include the social media icons in the footer.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+o	codeanywhere
+-	Used as an IDE workspace to code the website.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+o	Git
+-	Used the Gitpod terminal in codeanywhere to push updates to Github to maintain version control.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+o	Github
+-	Used as a repository for code of the website.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+o	Gitpages
+-	Used to deploy the website.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Code Testing
+I used the W3C Markup Validator (for HMTL) the W3C CSS Validator (for CSS) and JSHint (JavaScript) to validate the website's code to ensure there were no syntax errors.  I corrected minor errors by removing unnecessary closing tags in HTML and adding missing semi-colons in JavaScript.  Final validation results below.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+*HTML*
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Image showing w3 validation result](README_images/w3c_html_check_1.png)
 
-------
+*CSS*
 
-## FAQ about the uptime script
+![Image showing w3c validation result for css](README_images/w3_css_check_1.png)
 
-**Why have you added this script?**
+![Image showing jshint validation result for JavaScript](README_images/jshint_js_check_1.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Testing User Stories from User Experience (UX) Section
+**First Time Visitor Goals**
 
-**How will this affect me?**
+o To play a quiz and enjoy playing it
+-	The site offers a quick to play quiz with challenging questions on a variety of general knowledge subjects.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+o To intuitively navigate the site and quiz
+- The site has a simple layout, that instructs the user to enter a player name to start the quiz.  Upon starting the quiz, the user is presented with two answer buttons to use until the quiz is finished.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+o To be able to immedidately play again if unsuccessful on first attempt
+- Upon finishing the quiz, an alert will confirm if the user has won the game or not.  By closing the alert, the quiz is reset for the user to immediately play again.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+**Returning Visitor Goals**
 
-**So….?**
+o To have enjoyed the first visit and to return to try again
+- If the user has enjoyed the quiz and returns to play again, they will find their player name will be selectable in the entry field from the cache and so playing again will be convenient.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+o To find new questions in the quiz
+- New questions would be added in future site updates.
 
-**Can I opt out?**
+o To visit social media sites for the quiz and engage with other fans of the site
+- The footer provides easy access to the 'Aye or Naw?' social media channels.
+- These links open in a new tab, to conveniently allow the user to remain on 'Aye or Naw?'
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+**Frequent Visitor Goals**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+o To beat high scores
+- Although the quiz does not store high scores, the user may be inclined to keep returning until they win the quiz.  A stored high score could be a feature in a future update.
 
-**Anything more?**
+o To find new quizzes
+- This is something that woud be implemented in future updates to offer the user variety and encourage them to regularly return to the site.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+o To see development of the site
+- Possibilities for future updates include, a high score feature, multiple quizzes and development of the quiz itself i.e. include picture/video/audio questions.
 
----
+## Website Testing
 
-Happy coding!
+-	Responsiveness was tested on Chrome DevTools emulator, my laptop and iPhone 14.
+-	Full functionality of the quiz was tested by playing though it to both win and lose.
+-	I ran Chrome DevTools Lighthouse to check accessibility, results are below.
+
+![Image showing lighthouse results](README_images/lighthouse_accessibility_1.png)
+
+## Deployment
+
+o	This website was deployed with Github Pages per the below steps:
+-	Log into Github and select the relevant repository.
+-	Select ‘Settings’ from the menu along the top of the window.
+-	Scroll down and select ‘Pages’ under the ‘Code and Automation’ section.
+-	From the dropdown menu under ‘Source’, select ‘Deploy from a branch.’
+-	Ensure the dropdown menu under 'Branch’ is set to ‘main’ and the folder dropdown menu next to it is set to '(root)’ and click ‘Save’.
+-	The page will refresh.
+-	Once refreshed, scroll down and click ‘github-pages’ on the right-hand side.
+-	This will take you to the Deployments/History screen where you can click ‘View deployment’ to view the website.
+
+## Credits
+
+o	Code
+- All code was written by John Shieds.
+- Assistance was provided by my mentor for the iteration of the question and answers array.
+ - I sought assistance from Student Support on the scoring of the quiz.  My original plan was to have ten score elements on the page that either turn green or red, depending on the answer (per the Wireframe below).  However, Student Support accepted this was difficult and suggested a different approach.  This is where I changed the scoring to 'Correct' and 'Incorrect'.
+
+ ![Image showing wireframe](README_images/aye_or_naw_wireframe.png)
