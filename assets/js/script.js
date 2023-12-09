@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "button") {
             }
-        })
+        });
     }
     runGame();
 });
@@ -92,7 +92,7 @@ let incorrectScore = 0;
 function checkAnswer() {
     const currentQuestion = questionsAnswers[questionIndex];
     const correctAnswer = currentQuestion.correctAnswer;
-    console.log(correctAnswer)
+    console.log(correctAnswer);
     
     if (userAnswer === correctAnswer) {
     console.log(questionsAnswers[questionIndex]);
@@ -117,11 +117,11 @@ function checkAnswer() {
 //once all ten questions have been answered the player is told if won or lost and invited to play again
 function endGame() {
     if (correctScore === 10) {
-        alert("Congratulations - you won!")
+        alert("Congratulations - you won!");
     } else {
-        alert("Unlucky, you didn't win this time - play again!")
+        alert("Unlucky, you didn't win this time - play again!");
     }
-    restartGame()
+    restartGame();
 }
 
 function restartGame() {
