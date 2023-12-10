@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     runGame();
 });
+//check player name and startGame
 function runGame() {
     let plrName = document.getElementById("pname");
     let playButton = document.getElementById("play-button");
@@ -77,10 +78,12 @@ function runGame() {
         checkAnswer();
     });
 }
+//show quiz screen upon player name being entered
 function startGame() {
     document.getElementById("game-area").style.display = "block";
     loadQuestion();
 }
+
 function loadQuestion() {
     const currentQuestion = questionsAnswers[questionIndex];
     document.getElementById("question-box").innerHTML = currentQuestion.question;
@@ -88,7 +91,7 @@ function loadQuestion() {
 
 let correctScore = 0;
 let incorrectScore = 0;
-
+//check user answer against relevant question in array and update score through to last question
 function checkAnswer() {
     const currentQuestion = questionsAnswers[questionIndex];
     const correctAnswer = currentQuestion.correctAnswer;
@@ -123,7 +126,7 @@ function endGame() {
     }
     restartGame();
 }
-
+//restart game from first question
 function restartGame() {
     questionIndex = 0;
     correctScore = 0;
