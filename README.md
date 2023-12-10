@@ -157,7 +157,17 @@ o	This website was deployed with Github Pages per the below steps:
 
 o	Code
 - All code was written by John Shieds.
-- Assistance was provided by my mentor for the iteration of the question and answers array.
- - I sought assistance from Student Support on the scoring of the quiz.  My original plan was to have ten score elements on the page that either turn green or red, depending on the answer (per the Wireframe below).  However, Student Support accepted this was difficult and suggested a different approach.  This is where I changed the scoring to 'Correct' and 'Incorrect'.
+- Assistance was provided by my mentor for the iteration of the questions and answers array.
+ - I sought assistance from Student Support on the scoring of the quiz.  My original plan was to have ten score elements on the page that either turn green or red, depending on the answer (per the wireframe below).  However, Student Support accepted this was difficult and suggested a different approach.  This is where I changed the scoring to a tally of 'Correct' and 'Incorrect'.
 
  ![Image showing wireframe](README_images/aye_or_naw_wireframe.png)
+
+
+ - I also sought out assistance on Stack Overflow for an issue I was having with the alerts appearing before the score for the final question was updated, resulting in nine updated scores then informing the user if they had won or lost.  One of the suggested solutions on Stack Overflow, was to use the setTimeout function to only execute the alerts once the timer had expired.  I found this to the exact solution I was looking for.
+
+ o Content & Media
+ - The concept for the quiz was inspired by a quiz of the same name on Greatest Hits Radio Scotland's morning show.  A few questions have been used from that quiz.
+ - The image in the header was found using a Google images search as I struggled to find what I was looking for on copywrite-free sites.  The website this originated is https://loft-boarding.co.uk/frequently-asked-questions/
+
+o Acknowledgements
+- As mentioned above, support was sought from Code Institute's Student Support and Slack community, my mentor and Stack Overflow.  The support received on this project has been invaluable and has been a great learning experience.
