@@ -1,7 +1,7 @@
 # Aye or Naw?
 [Visit the live website here!](https://shieldsjohn.github.io/aye_or_naw/index.html)
 
-'Aye or Naw?' is a true or false general-knowledger quiz, where ten correct answers are required to win.
+'Aye or Naw?' is a true or false general-knowledge quiz, where ten correct answers are required to win.
 
 ![Image showing the responsive design of the 'Aye or Naw?' website](README_images/amiresponsive_1.png)
 
@@ -102,7 +102,7 @@ I used the W3C Markup Validator (for HMTL) the W3C CSS Validator (for CSS) and J
 **First Time Visitor Goals**
 
 o To play a quiz and enjoy playing it
--	The site offers a quick to play quiz with challenging questions on a variety of general knowledge subjects.
+-	The site offers a quick-to-play quiz with challenging questions on a variety of general knowledge subjects.
 
 o To intuitively navigate the site and quiz
 - The site has a simple layout, that instructs the user to enter a player name to start the quiz.  Upon starting the quiz, the user is presented with two answer buttons to use until the quiz is finished.
